@@ -1,0 +1,68 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* En-tête */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Section scanner */
+.scanner-section {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Vidéo pour afficher la caméra */
+#preview {
+    width: 100%;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteneur du résultat */
+#result-container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Texte pour les résultats */
+#qr-code-content, #entry-time-content {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.2em;
+}

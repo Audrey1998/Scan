@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan QR Code</title>
+    <link rel="stylesheet" href="Scan.css">
+    <script src="https://cdn.jsdelivr.net/npm/instascan@0.0.5/instascan.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Scanner un QR Code</h1>
+        <p>Utilisez votre caméra pour scanner un QR Code.</p>
+    </header>
+
+    <main>
+        <section class="scanner-section">
+            <video id="preview" autoplay></video>
+            <div id="result-container">
+                <p><strong>QR Code scanné : </strong><span id="qr-code-content"></span></p>
+                <p><strong>Heure d'entrée : </strong><span id="entry-time-content"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Application QR Code</p>
+    </footer>
+
+    <script src="scan.js"></script>
+</body>
+</html>
