@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scan QR Code</title>
     <link rel="stylesheet" href="Scan.css">
-<script src="https://cdn.jsdelivr.net/npm/instascan@1.0.0/instascan.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instascan@0.0.5/instascan.min.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +20,15 @@
                 <p><strong>QR Code scanné : </strong><span id="qr-code-content"></span></p>
                 <p><strong>Heure d'entrée : </strong><span id="entry-time-content"></span></p>
             </div>
+
+            <!-- Section pour afficher les détails supplémentaires -->
+            <div id="qr-details" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                <h3>Détails du QR Code :</h3>
+                <p id="qr-extra-info">Aucune information supplémentaire.</p>
+            </div>
         </section>
+
+       
     </main>
 
     <footer>
